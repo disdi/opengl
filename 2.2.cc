@@ -30,6 +30,7 @@ int main(int argc, char **argv) {
     return 1;
   }
   glfwMakeContextCurrent(window);
+  glfwSwapInterval(1);
   glfwSetKeyCallback(window, KeyCallback);
 
   glewExperimental = GL_TRUE;
