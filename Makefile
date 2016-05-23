@@ -1,4 +1,4 @@
-TARGETS := first
+TARGETS := 2.1 2.2
 CFLAGS := -g -std=gnu++14 $(shell pkg-config --cflags glew glfw3)
 LDFLAGS := $(shell pkg-config --libs glew glfw3)
 
