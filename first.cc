@@ -33,10 +33,8 @@ int main(int argc, char **argv) {
   glewExperimental = GL_TRUE;
   glewInit();
 
-  const GLubyte *renderer = glGetString(GL_RENDERER);
-  const GLubyte *version = glGetString(GL_VERSION);
-  std::cout << "renderer: " << renderer << "\n";
-  std::cout << "version: " << version << "\n";
+  std::cout << "Renderer: " << glGetString(GL_RENDERER) << "\n";
+  std::cout << "Version: " << glGetString(GL_VERSION) << "\n";
 
   while (!glfwWindowShouldClose(window)) {
     int width, height;
