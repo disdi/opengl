@@ -6,7 +6,7 @@
 #include <GLFW/glfw3.h>
 
 static void ErrorCallback(int error, const char *description) {
-  std::cerr << description;
+  std::cerr << description << std::flush;
 }
 
 static void KeyCallback(GLFWwindow *window, int key, int scancode, int action,
