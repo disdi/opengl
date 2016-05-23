@@ -39,12 +39,8 @@ int main(int argc, char **argv) {
   std::cout << "version: " << version << "\n";
 
   while (!glfwWindowShouldClose(window)) {
-    float ratio;
     int width, height;
-
     glfwGetFramebufferSize(window, &width, &height);
-    ratio = width / (float)height;
-
     glViewport(0, 0, width, height);
 
     static const GLfloat red[] = {1.0f, 0.0f, 0.0f, 1.0f};
